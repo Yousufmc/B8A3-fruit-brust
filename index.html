@@ -17,40 +17,385 @@
         theme: {
           extend: {
             colors: {
-              gradient
-              'gradient-start': '#da373d',
-              'gradient-end': '#da373d',
-            }
-          }
+              "gradient-start": "#da373d",
+              "gradient-end": "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Some Custom CSS -->
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
         }
       }
-    </script>
-    <!-- Some Custom CSS
-  <style type="text/tailwindcss">
-    @layer utilities {
-      .content-auto {
-        content-visibility: auto;
-      }
-    }
-  </style> -->
+    </style>
     <!-- FontAwesome Cdn -->
     <script
       src="https://kit.fontawesome.com/fc0be0cdad.js"
       crossorigin="anonymous"
     ></script>
     <!-- Google Font Link -->
-
-    <style></style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .lato-fonts {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
   </head>
-  <body>
+  <body class="lato-fonts">
     <!-- Header Section Starts Here. -->
     <header>
-      <!-- Navbar Starts Here -->
-      <nav></nav>
-      <!-- Hero Section Starts Here -->
-    </header>
-    <!--Main Section  -->
+      <!--1 Navbar Starts Here -->
+      <nav class="lg:mx-28 lg:my-5"> 
+        <div class="navbar lg:bg-[#f85559] rounded-full lg:px-5 flex-row-reverse lg:flex-row" >
+             <div class="flex flex-1 justify-end"> <div class="dropdown"> <label tabindex="0" class="btn btn-ghost lg:hidden">
+                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" > 
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                 </label> 
+                </div>
+                  <div class="navbar-center hidden lg:flex"> 
+                    <ul class="menu menu-horizontal px-1 text-white"> 
+                        <li><a>Home</a></li> 
+                        <li><a>About Us</a></li> 
+                        <li><a>Shop</a></li> 
+                        <li><a>All Fruits</a></li> 
+                    </ul> 
+                </div> 
+            </div> 
+            <a class="btn btn-ghost normal-case text-xl h-auto flex-1 justify-center" > 
+                <img src="images/logo.png" alt="logo" /> <span class="text-2xl lg:text-4xl font-extrabold lg:text-white" >Fruit Burst</span >
+                </a > <!-- searchbar --> <div class="navbar-end hidden md:hidden lg:flex flex-1"> <div class="form-control relative"> <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 search-icon absolute top-4 right-4 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" > <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /> </svg> <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto rounded-full" /> 
+                </div> 
+            </div> 
+        </div>
+    </nav>
 
-    <!-- Footer Section Starts Here -->
+
+
+
+
+
+
+
+      <nav>
+        <div class="navbar bg-[#F85559] rounded-[600px] text-[#FFF]">
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits </a></li>
+            </ul>
+          </div>
+
+          <div class="navbar-start">
+            <div class="flex items-center">
+              <img src="./images/logo.png" alt="logo" />
+              <h1 class="normal-case text-xl">Fruit Burst</h1>
+            </div>
+          </div>
+
+          <div class="navbar-end">
+            <div class="form-control">
+              <div class="input-group">
+                <input
+                  type="text"
+                  placeholder="Search here"
+                  class="input input-bordered"
+                />
+                <button class="btn btn-square">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Hero Section Starts Here -->
+      <!--2 Exotic tastes at your doorstep Section -->
+      <section>
+                  <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+                <div class="hero min-h-screen" style="background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
+                    <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-center text-neutral-content">
+                      <div class="max-w-md">
+                        <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                        <p class="mb-5">We supply highly quality organic products</p>
+                        <button class="btn btn-primary">Shop Now</button>
+                      </div>
+                    </div>
+                  </div>
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="./images/banner2.png" class="w-full" alt="photo"/>
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="./images/banner3.png" class="w-full" alt="photo" />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="./images/banner4.png" class="w-full" alt="photo" />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+        </header>
+      </section>
+    <!-- Main Section  -->
+
+    <!--3 Deal of the day Section -->
+<section max-w-1300>
+    <div class="flex justify-between">
+        <div>
+            <h2 >Deal of the day</h2>
+            <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br> Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+        <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:15;"></span>
+              </span>
+              days
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:10;"></span>
+              </span>
+              hours
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:24;"></span>
+              </span>
+              min
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:54;"></span>
+              </span>
+              sec
+            </div>
+          </div>
+    </div>
+<div class="flex gap-3">
+    <!-- 1st Card -->
+    <div>
+        <div class="card w-96 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              <p>Apples</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <a>details</a>
+               </div>
+          </div>
+    </div>
+    <!-- 2nd Card -->
+    <div>
+        <div class="card w-96 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              <p>Orange</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <a>details</a>
+               </div>
+          </div>
+    </div>
+    <!-- 3rd Card -->
+    <div>
+        <div class="card w-96 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              <p>Dragon</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <a>details</a>
+               </div>
+          </div>
+    </div>
+    <!-- 4th Card -->
+    <div>
+        <div class="card w-96 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              <p>Banana</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <a>details</a>
+               </div>
+          </div>
+    </div>
+    <button class="btn btn-warning">Warning</button>
+</div>
+
+
+</section>
+
+    <!--4 Meet the team section -->
+    <div
+      class="hero min-h-screen"
+      style="background-image: url('/images/banner1.png')"
+    >
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
+          <p class="mb-5">
+            Contrary to popular belief, is not simply random text. It has roots
+            in a piece of classical Latin literature from 45 BC, making it over
+            2000 years old.
+          </p>
+          <div>
+            <div>
+              <img src="" alt="" />
+              <h3></h3>
+              p
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--5 Why Choose Us Section  -->
+    <!--6 Footer Section Starts Here -->
+    <footer class="footer footer-center p-10 bg-[#121212] text-[#FFF] rounded">
+      <div class="flex justify-center">
+        <img src="./images/logo.png" alt="log photo" />
+        <p>Fruit Burst</p>
+      </div>
+      <div class="grid grid-flow-col gap-4">
+        <a class="link link-hover">Home</a>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Shop</a>
+        <a class="link link-hover">All Fruits</a>
+        <a class="link link-hover">Support</a>
+      </div>
+      <div>
+        <div class="grid grid-flow-col gap-4">
+          <a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+              ></path></svg
+          ></a>
+          <a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+              ></path></svg
+          ></a>
+          <a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+              ></path></svg
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+    
   </body>
 </html>
