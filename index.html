@@ -54,28 +54,37 @@
     <!--============================= Header Section Starts Here.====================================== -->
     <header class="max-w-[80%] m-auto">
       <!--1 Navbar Starts Here -->
-      <nav class="lg:mx-28 lg:my-5">
+      <nav class="lg:my-5">
         <div
           class="navbar lg:bg-[#f85559] rounded-full lg:px-5 flex-row-reverse lg:flex-row"
         >
           <div class="flex flex-1 justify-end">
-            <div class="dropdown">
-              <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <div class="dropdown dropdown-bottom dropdown-end">
+              <label
+                tabindex="0"
+                class="btn btn-ghost btn-circle text-white border-none lg:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-8 w-8"
-                  fill="none"
+                  width="24"
+                  height="24"
                   viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
+                  fill="none">
                   <path
+                    d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25"
+                    stroke="#121212"
+                    stroke-width="1.5"
                     stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
+                    stroke-linejoin="round" />
                 </svg>
               </label>
+  
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>Homepage</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>About</a></li>
+              </ul>
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1 text-white">
@@ -86,6 +95,7 @@
               </ul>
             </div>
           </div>
+
           <a
             class="btn btn-ghost normal-case text-xl h-auto flex-1 justify-center"
           >
@@ -136,7 +146,7 @@
                   Exotic tastes at your doorstep
                 </h1>
                 <p class="mb-5">We supply highly quality organic products</p>
-                <button class="btn btn-primary bg-[#f85559]">Shop Now</button>
+                <button class="btn bg-[#f85559] border-0 text-white hover:text-black">Shop Now</button>
               </div>
             </div>
           </div>
@@ -249,10 +259,10 @@
     <!--===================================== Main Section Starts Here.=============================  -->
 
     <!--========================================3 Deal of the day Section =============================-->
-    <section class="mb-12 mt-12 max-w-[80%] m-auto">
-      <div class="container">
+    <section class="mb-12  max-w-[80%] m-auto">
+      <div class="">
         <div
-          class="flex flex-col gap-y-8 lg:flex-row my-16 items-center text-center md:text-left lg:pl-20 justify-between"
+          class="flex flex-col gap-y-8 lg:flex-row my-16 items-center text-center md:text-left justify-between"
         >
           <div class="flex-1 space-y-6">
             <h2 class="font-extrabold text-4xl">Deal of the day</h2>
@@ -341,7 +351,7 @@
         <!-- Card Section -->
 
         <!-- Card-1 -->
-        <div class="flex gap-4 justify-center items-center flex-wrap">
+        <div class="flex justify-center lg:justify-between gap-5 items-center flex-wrap">
           <div>
             <div class="card bg-base-100 shadow-xl">
               <figure class="px-10 pt-10">
@@ -1230,7 +1240,7 @@
         <!--~~~~~~~~~~~~~~~~~~~~~~~~ 1st Part ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <div class="ChooseUsDetails space-y-5 order-2 lg:order-1">
           <div
-            class="subDetails flex flex-col lg:flex-row justify-center items-center gap-6 px-5"
+            class="subDetails flex flex-col mt-6 lg:flex-row justify-center items-center gap-6 px-5"
           >
             <div class="groupIcon">
               <img
